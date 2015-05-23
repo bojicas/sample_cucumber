@@ -8,6 +8,8 @@ dependencies:
     - meteor --version
     - npm -version
     - node -v
+    - npm install -g url
+    - npm install -g assert
 
 test:
   override:
