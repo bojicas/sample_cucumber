@@ -1,0 +1,15 @@
+dependencies:
+  pre:
+    - sudo apt-get update
+    - sudo apt-get install --only-upgrade google-chrome-stable
+
+  override:
+    - meteor || curl https://install.meteor.com | /bin/sh
+    - meteor --version
+    - npm -version
+    - node -v
+
+test:
+  override:
+    - VELOCITY_CI=1 SELENIUM_BROWSER=chrome meteor --test --once
+
