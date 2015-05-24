@@ -9,3 +9,4 @@ autopublish
 insecure
 xolvio:cucumber
 sanjo:jasmine
+velocity:console-reporter
