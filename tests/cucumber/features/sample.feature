@@ -19,10 +19,4 @@ Feature: One-liner description of this feature
   @dev
   Scenario:
     When I navigate to "/"
-    Then I should see the title "intentional failure"
-
-  # This scenario will not run as part of the Meteor dev cycle because it does not have the @dev tag
-  # But it will run on CI if you use `meteor --test` for instance
-  Scenario:
-    When I navigate to "/"
-    Then I should see the title "another intentional failure"
+    Then I should see the title "Sample Cucumber"
