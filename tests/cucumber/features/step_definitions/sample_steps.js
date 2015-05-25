@@ -16,13 +16,16 @@
       // WebdriverIO supports Promises/A+ out the box, so you can return that too
       this.client. // this.browser is a pre-configured WebdriverIO + PhantomJS instance
         url(url.resolve(process.env.ROOT_URL, relativePath)). // process.env.ROOT_URL always points to the mirror
+        pause(5000).
         call(callback);
     });
 
     this.Then(/^I should see the title "([^"]*)"$/, function (expectedTitle, callback) {
       // you can use chai-as-promised in step definitions also
       this.client.
+        pause(5000).
         waitForVisible('body *'). // WebdriverIO chain-able promise magic
+        pause(4000).
         getTitle().should.become(expectedTitle).and.notify(callback);
     });
 
