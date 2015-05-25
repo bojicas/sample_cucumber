@@ -62,18 +62,3 @@ Feature: One-liner description of this feature
   Scenario: Scenario no 15
     When I navigate to "/"
     Then I should see the title "Sample Cucumber"
-  Scenario: Scenario no 16
-    When I navigate to "/"
-    Then I should see the title "Sample Cucumber"
-  Scenario: Scenario no 17
-    When I navigate to "/"
-    Then I should see the title "Sample Cucumber"
-  Scenario: Scenario no 18
-    When I navigate to "/"
-    Then I should see the title "Sample Cucumber"
-  Scenario: Scenario no 19
-    When I navigate to "/"
-    Then I should see the title "Sample Cucumber"
-  Scenario: Scenario no 20
-    When I navigate to "/"
-    Then I should see the title "Sample Cucumber"
